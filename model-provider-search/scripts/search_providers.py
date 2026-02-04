@@ -6,6 +6,7 @@ Search models.json for providers offering a specific model.
 import json
 import sys
 import re
+import os
 
 
 def search_providers(file_path, model_pattern):
@@ -103,7 +104,10 @@ if __name__ == "__main__":
         sys.exit(1)
 
     model_pattern = sys.argv[1]
-    default_path = "/home/ac/.cache/opencode/models.json"
+    
+    # XDG Base Directory Specification: default for cache is ~/.cache
+    cache_home = os.environ.get("XDG_CACHE_HOME", os.path.expanduser("~/.cache"))
+    default_path = os.path.join(cache_home, "opencode", "models.json")
 
     results = search_providers(default_path, model_pattern)
     print_table(results)

@@ -34,7 +34,7 @@ Examples:
 
 ### File location
 
-The script searches `/home/ac/.cache/opencode/models.json` by default. This path can be modified in the script if needed.
+The script searches `$XDG_CACHE_HOME/opencode/models.json` (defaults to `~/.cache/opencode/models.json`) by default. This path can be modified in the script if needed.
 
 ## Search Logic
 

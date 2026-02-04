@@ -1,36 +1,17 @@
-# My Custom OpenCode Skills
+# My Agent Skills
 
-Репозиторий с кастомными скилами для OpenCode, которые я создал самостоятельно.
+This is a repository containing custom skills for AI agents that I have created personally.
 
-## Структура репозитория
+## Repository Structure
 
 ```
 .
 ├── skill-creator/
-│   └── SKILL.md          # Гайд по созданию скилов
+│   └── SKILL.md          # Guide for creating skills
 ├── skill-1/
-│   └── SKILL.md          # Кастомный скил 1
+│   └── SKILL.md          # Custom skill 1
 ├── skill-2/
-│   └── SKILL.md          # Кастомный скил 2
-└── README.md             # Этот файл
+│   └── SKILL.md          # Custom skill 2
+└── README.md             # This file
 ```
 
-## Как использовать
-
-Скопируйте нужный скил в папку `~/.config/opencode/skills/`:
-
-```bash
-# Пример
-mkdir -p ~/.config/opencode/skills/
-cp -r ./skill-name ~/.config/opencode/skills/
-```
-
-## Список скилов
-
-| Скил | Описание |
-|------|----------|
-| skill-creator | Гайд по созданию скилов для OpenCode |
-
-## Лицензия
-
-MIT
