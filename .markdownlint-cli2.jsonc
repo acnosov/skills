@@ -1,5 +1,6 @@
 {
-    // Glob patterns to lint
+    // https://github.com/DavidAnson/markdownlint-cli2
+    "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/main/schema/markdownlint-cli2-config-schema.json",
     "globs": [
         "**/*.md"
     ],
@@ -10,7 +11,7 @@
         "vendor/**"
     ],
     // Fix violations automatically (--fix)
-    "fix": false,
+    "fix": true,
     // Rule configuration (all rules enabled by default)
     "config": {
         // No hard tabs: disable (common for prose/READMEs)
