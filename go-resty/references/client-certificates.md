@@ -23,9 +23,7 @@ myClientCertStr := `-----BEGIN CERTIFICATE-----
 ... cert content ...
 -----END CERTIFICATE-----`
 
-myClientCertKeyStr := `-----BEGIN PRIVATE KEY-----
-... cert key content ...
------END PRIVATE KEY-----`
+myClientCertKeyStr := `PEM-encoded client private key`
 
 client.SetCertificateFromString(myClientCertStr, myClientCertKeyStr)
 ```

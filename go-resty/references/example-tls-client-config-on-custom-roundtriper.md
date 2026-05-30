@@ -4,14 +4,14 @@ title: TLS Client Config on Custom http.RoundTripper
 
 # TLS Client Config on Custom http.RoundTripper
 
-Resty v3 provides the [TLSClientConfiger]({{% godoc v3 %}}TLSClientConfiger) interface to configure TLS client configuration for custom transports implemented using the [http.RoundTripper]({{% godoc %}}/net/http#RoundTripper) interface.
+Resty v3 provides the [TLSClientConfigure]({{% godoc v3 %}}TLSClientConfigure) interface to configure TLS client configuration for custom transports implemented using the [http.RoundTripper]({{% godoc %}}/net/http#RoundTripper) interface.
 
-## Implement `TLSClientConfiger` interface
+## Implement `TLSClientConfigure` interface
 
 ```go
 type CustomTransport struct {
    http.RoundTripper
-   resty.TLSClientConfiger
+   resty.TLSClientConfigure
 }
 
 func (t *CustomTransport) RoundTrip(r *http.Request) (*http.Response, error) {

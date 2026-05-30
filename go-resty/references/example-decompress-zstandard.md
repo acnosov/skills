@@ -16,8 +16,8 @@ Package: [github.com/klauspost/compress/zstd](https://github.com/klauspost/compr
 c := resty.New()
 defer c.Close()
 
-// Add decompresser into Resty
-client.AddContentDecompresser("zstd", decompressZstd)
+// Add decompressor into Resty
+client.AddContentDecompressor("zstd", decompressZstd)
 
 // Create Zstandard decompress logic
 func decompressZstd(r io.ReadCloser) (io.ReadCloser, error) {

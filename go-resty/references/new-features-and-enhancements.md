@@ -7,7 +7,7 @@ bookHidden: true
 * Override all transport settings and timeout values used by Resty using [NewWithTransportSettings]({{% godoc v3 %}}NewWithTransportSettings).
 * Fully composable [request]({{% relref "request-middleware" %}}) and [response]({{% relref "response-middleware" %}}) middleware
 * [Content-Type {Encoder, Decoder}]({{% relref "content-type-encoder-and-decoder" %}})
-* [Content Decompresser]({{% relref "content-decompresser" %}})
+* [Content Decompressor]({{% relref "content-decompressor" %}})
 * [Circuit Breaker]({{% relref "circuit-breaker" %}})
 * [Multipart]({{% relref "multipart" %}}) streaming and [upload progress]({{% relref "multipart#upload-progress" %}}).
 * [Load Balancer and Service Discovery]({{% relref "load-balancer-and-service-discovery" %}})
@@ -19,7 +19,7 @@ bookHidden: true
 * [Server-Sent Events]({{% relref "server-sent-events" %}})
 * SRV lookup got a facelift with weighted round-robin algorithm and weight value respected from SRV record.
 * Ability to set empty header value for `User-Agent` and `Accept-Encoding`.
-* Ability to set `TLSClientConfig` on custom RoundTripper via [TLSClientConfiger interface]({{% relref "tls-client-config-on-custom-roundtriper" %}}).
+* Ability to set `TLSClientConfig` on custom RoundTripper via [TLSClientConfigure interface]({{% relref "tls-client-config-on-custom-roundtriper" %}}).
 * Adds Retry Trace ID and Attempt details to the debug log.
 * [Digest Auth]({{% relref "authentication#digest-auth" %}})
     * Internal flow improvements and optimization.
@@ -94,7 +94,7 @@ bookHidden: true
 * [Request.Patch]({{% godoc v3 %}}Request.Patch)
 * [Request.Trace]({{% godoc v3 %}}Request.Trace)
 * [Request.SetMethod]({{% godoc v3 %}}Request.SetMethod)
-* [Request.SetURL](R{{% godoc v3 %}}equest.SetURL)
+* [Request.SetURL]({{% godoc v3 %}}Request.SetURL)
 * [Request.SetAllowMethodGetPayload]({{% godoc v3 %}}Request.SetAllowMethodGetPayload)
 * [Request.SetAllowMethodDeletePayload]({{% godoc v3 %}}Request.SetAllowMethodDeletePayload)
 * [Request.RetryTraceID]({{% godoc v3 %}}Request)

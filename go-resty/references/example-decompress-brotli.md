@@ -16,8 +16,8 @@ Package: [github.com/andybalholm/brotli](https://github.com/andybalholm/brotli)
 c := resty.New()
 defer c.Close()
 
-// Add decompresser into Resty
-client.AddContentDecompresser("br", decompressBrotli)
+// Add decompressor into Resty
+client.AddContentDecompressor("br", decompressBrotli)
 
 // Create Brotli decompress logic
 func decompressBrotli(r io.ReadCloser) (io.ReadCloser, error) {
@@ -49,8 +49,8 @@ Package: [github.com/dsnet/compress](https://github.com/dsnet/compress)
 c := resty.New()
 defer c.Close()
 
-// Add decompresser into Resty
-client.AddContentDecompresser("br", decompressBrotli)
+// Add decompressor into Resty
+client.AddContentDecompressor("br", decompressBrotli)
 
 // Create Brotli decompress logic
 func decompressBrotli(r io.ReadCloser) (io.ReadCloser, error) {

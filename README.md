@@ -14,4 +14,3 @@ This is a repository containing custom skills for AI agents that I have created 
 │   └── SKILL.md          # Custom skill 2
 └── README.md             # This file
 ```
-

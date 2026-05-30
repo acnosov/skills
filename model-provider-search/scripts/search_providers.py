@@ -104,7 +104,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     model_pattern = sys.argv[1]
-    
+
     # XDG Base Directory Specification: default for cache is ~/.cache
     cache_home = os.environ.get("XDG_CACHE_HOME", os.path.expanduser("~/.cache"))
     default_path = os.path.join(cache_home, "opencode", "models.json")

@@ -30,4 +30,3 @@ defer c.Close()
 
 // You're ready to use HTTP3 with Resty
 ```
-

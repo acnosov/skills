@@ -76,5 +76,3 @@ client.SetRedirectPolicy(&AdvancedRedirectPolicy{
 ### Response
 
 * [Response.RedirectHistory]({{% godoc v3 %}}Response.RedirectHistory)
-
-

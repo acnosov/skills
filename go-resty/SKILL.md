@@ -72,7 +72,7 @@ Resty can be extended through these interfaces and hooks:
 - Request middleware
 - Response middleware
 - Content-Type encoder and decoder
-- Content decompresser
+- Content decompressor
 - Load balancer and service discovery
 - Retry strategy, conditions, and hooks
 - Circuit breaker policy
