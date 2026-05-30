@@ -28,6 +28,7 @@ python scripts/search_providers.py <model-pattern>
 ```
 
 Examples:
+
 - `python scripts/search_providers.py kimi-k2.5` - Search for Kimi K2.5
 - `python scripts/search_providers.py gpt-4o` - Search for GPT-4o
 - `python scripts/search_providers.py claude` - Search for any Claude model
@@ -39,6 +40,7 @@ The script searches `$XDG_CACHE_HOME/opencode/models.json` (defaults to `~/.cach
 ## Search Logic
 
 The search matches the provided pattern against:
+
 - Model IDs (case-insensitive)
 - Model names (case-insensitive)
 
@@ -47,6 +49,7 @@ Results include models where the pattern appears anywhere in the ID or name.
 ## Output Format
 
 The output is a markdown table with columns:
+
 - Provider Name: Human-readable provider name
 - Provider ID: Machine-readable provider identifier
 - Model ID: Model identifier used by the provider

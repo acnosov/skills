@@ -2,13 +2,13 @@
 title: Enable HTTP3
 ---
 
-# Enable HTTP3
+## Enable HTTP3
 
 HTTP3 is not yet included in the Go standard packages. However, the HTTP3 package is available from the community.
 
 Package: [github.com/quic-go/quic-go](https://github.com/quic-go/quic-go)
 
-Documentation: https://quic-go.net/docs/
+Documentation: <https://quic-go.net/docs/>
 
 ## Example
 

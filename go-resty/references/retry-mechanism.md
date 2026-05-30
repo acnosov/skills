@@ -13,40 +13,37 @@ Resty provides exponential backoff with a jitter strategy out of the box; a cust
 ## Default Values
 
 * Retry count is `0`
-    * Total retry attempts = `first attempt + retry count`
+  * Total retry attempts = `first attempt + retry count`
 * Retry minimum wait time is `100ms`
 * Retry maximum wait time is `2000ms`
 * Retry strategy is exponential backoff with a jitter
-
 
 ## Default Behavior
 
 * Request values are inherited from the client upon creation; they do not refresh during a retry attempt. Therefore, value updates are performed on the request instance via [Response.Request]({{% godoc v3 %}}Response).
 * Applies [default retry conditions]({{% relref "#default-conditions" %}}) first before user-defined retry conditions.
-    * It can be disabled via [Client.SetRetryDefaultConditions]({{% godoc v3 %}}Client.SetRetryDefaultConditions) or [Request.SetRetryDefaultConditions]({{% godoc v3 %}}Request.SetRetryDefaultConditions)
+  * It can be disabled via [Client.SetRetryDefaultConditions]({{% godoc v3 %}}Client.SetRetryDefaultConditions) or [Request.SetRetryDefaultConditions]({{% godoc v3 %}}Request.SetRetryDefaultConditions)
 * Executes request retry conditions first, then the client retry conditions, until it gets the return value `true`. Then, it doesn't proceed to execute the remaining conditions.
 * Executes request retry hooks first, and then the client retry hooks.
 * Respects header `Retry-After` if present.
 * Resets reader automatically on retry request if the `io.ReadSeeker` interface is supported.
 * Retries only on Idempotent HTTP Verb - GET, HEAD, PUT, DELETE, OPTIONS, and TRACE ([RFC 9110](https://datatracker.ietf.org/doc/html/rfc9110.html#name-method-registration), [RFC 5789](https://datatracker.ietf.org/doc/html/rfc5789.html))
-    * Use [Client.SetAllowNonIdempotentRetry]({{% godoc v3 %}}Client.SetAllowNonIdempotentRetry) or [Request.SetAllowNonIdempotentRetry]({{% godoc v3 %}}Request.SetAllowNonIdempotentRetry). If additional control is necessary, utilize the custom retry condition.
+  * Use [Client.SetAllowNonIdempotentRetry]({{% godoc v3 %}}Client.SetAllowNonIdempotentRetry) or [Request.SetAllowNonIdempotentRetry]({{% godoc v3 %}}Request.SetAllowNonIdempotentRetry). If additional control is necessary, utilize the custom retry condition.
 * [Request.RetryTraceID]({{% godoc v3 %}}Request) - GUID generated for retry count > 0
-
 
 ## Default Conditions
 
 * Condition gets applied in the following order
-    * No Retry
-        * TLS certificate verification error
-        * Too many redirects error
-        * Scheme error
-        * Invalid header error
-        * Response is nil
-    * Retry
-        * Status Code is 429 Too Many Requests
-        * Status Code is 500 or above (but not Status Code 501 Not Implemented)
-        * Status Code is 0
-
+  * No Retry
+    * TLS certificate verification error
+    * Too many redirects error
+    * Scheme error
+    * Invalid header error
+    * Response is nil
+  * Retry
+    * Status Code is 429 Too Many Requests
+    * Status Code is 500 or above (but not Status Code 501 Not Implemented)
+    * Status Code is 0
 
 ## Examples
 
@@ -198,7 +195,6 @@ client.R().
 * [Client.SetRetryDefaultConditions]({{% godoc v3 %}}Client.SetRetryDefaultConditions)
 * [Client.AddRetryHooks]({{% godoc v3 %}}Client.AddRetryHooks)
 * [Client.AddRetryConditions]({{% godoc v3 %}}Client.AddRetryConditions)
-
 
 ### Request
 

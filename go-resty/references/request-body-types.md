@@ -7,6 +7,7 @@ weight: 4
 Resty supports various request body types.
 
 > [!NOTE]
+>
 > * Resty v3 streams the content in the request body for the `io.Reader` interface.
 > * Resty v3 uses a streaming approach by default to handle JSON and XML content types, improving memory efficiency. Resty also provides the [In-Memory Marshal and Unmarshal]({{% relref "content-type-encoder-and-decoder#in-memory-marshal-and-unmarshal" %}}) section.
 > * Setting the Content-Type header in the request skips the auto-detect computation.
@@ -81,6 +82,7 @@ fmt.Println(res.Error().(*LoginError))      // error: status code > 399
 
 > [!NOTE]
 > Resty v3,
+>
 > * Streams the content in the request body for the `io.Reader` interface.
 > * The content length option no longer applies to the `io.Reader` flow.
 

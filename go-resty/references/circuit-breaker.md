@@ -14,7 +14,7 @@ Out-of-the-box, Resty v3 provides:
 ## Default Values
 
 * Circuit break policy
-    * Status Code `500` and above
+  * Status Code `500` and above
 
 ## Count-based
 
@@ -149,7 +149,6 @@ defer c.Close()
 
 // start using the client ...
 ```
-
 
 ## Methods
 

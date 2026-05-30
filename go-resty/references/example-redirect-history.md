@@ -2,6 +2,7 @@
 # Redirect History
 
 Resty v3 adds the redirect history feature to the response.
+
 * Method [Response.RedirectHistory]({{% godoc v3 %}}Response.RedirectHistory) returns [RedirectInfo]({{% godoc v3 %}}RedirectInfo) slice.
 
 ```go

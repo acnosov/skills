@@ -26,6 +26,7 @@ client.R().
 > Digest auth is supported only at the client level; create a dedicated client to utilize it.
 
 Supported QOP -
+
 * `auth`
 * `auth-int`
 
@@ -67,6 +68,7 @@ client.R().
 For application/service that user custom HTTP header for authentication/authorization.
 
 > [!NOTE]
+>
 > * The default authorization key is `Authorization`.
 > * The default auth scheme is `Bearer`, which can be changed with [Client.SetAuthScheme]({{% godoc v3 %}}Client.SetAuthScheme) or [Request.SetAuthScheme]({{% godoc v3 %}}Request.SetAuthScheme)
 

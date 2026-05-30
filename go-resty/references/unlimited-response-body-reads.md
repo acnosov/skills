@@ -4,6 +4,7 @@
 Resty v3 provides the ability to read HTTP response body unlimited times.
 
 > [!WARNING]
+>
 > * Keeps the response body in memory, which might cause additional memory usage.
 
 {{% hintreqoverride %}}
@@ -11,6 +12,7 @@ Resty v3 provides the ability to read HTTP response body unlimited times.
 ## Example
 
 The provided code snippet demonstrates:
+
 * Response body auto-parsing.
 * Saves the response body to the file system.
 

@@ -2,7 +2,7 @@
 title: TLS Client Config on Custom http.RoundTripper
 ---
 
-# TLS Client Config on Custom http.RoundTripper
+## TLS Client Config on Custom http.RoundTripper
 
 Resty v3 provides the [TLSClientConfigure]({{% godoc v3 %}}TLSClientConfigure) interface to configure TLS client configuration for custom transports implemented using the [http.RoundTripper]({{% godoc %}}/net/http#RoundTripper) interface.
 

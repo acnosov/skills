@@ -38,6 +38,7 @@ client.SetTimeout(2 * time.Minute)
 ### Request Timeout
 
 > [!NOTE]
+>
 > * It overrides the client-level timeout value.
 > * It does not set a timeout if the user has already set a timeout/deadline.
 

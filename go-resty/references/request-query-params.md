@@ -6,7 +6,7 @@ weight: 2
 
 Resty provides easy-to-add request query parameters into requests.
 
-    Example: search=kitchen%20papers&size=large
+Example: `search=kitchen%20papers&size=large`
 
 {{% hintreqoverride %}}
 

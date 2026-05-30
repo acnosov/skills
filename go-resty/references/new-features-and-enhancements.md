@@ -12,9 +12,9 @@ bookHidden: true
 * [Multipart]({{% relref "multipart" %}}) streaming and [upload progress]({{% relref "multipart#upload-progress" %}}).
 * [Load Balancer and Service Discovery]({{% relref "load-balancer-and-service-discovery" %}})
 * Retry
-    * Retry settings on [Request-level]({{% relref "retry-mechanism#request" %}}).
-    * Respects header `Retry-After` if present.
-    * Resets reader on retry request if the `io.ReadSeeker` interface is supported.
+  * Retry settings on [Request-level]({{% relref "retry-mechanism#request" %}}).
+  * Respects header `Retry-After` if present.
+  * Resets reader on retry request if the `io.ReadSeeker` interface is supported.
 * [Root]({{% relref "root-certificates" %}}), [Client Root]({{% relref "client-root-certificates" %}}) certificates - dynamically reload by interval.
 * [Server-Sent Events]({{% relref "server-sent-events" %}})
 * SRV lookup got a facelift with weighted round-robin algorithm and weight value respected from SRV record.
@@ -22,15 +22,14 @@ bookHidden: true
 * Ability to set `TLSClientConfig` on custom RoundTripper via [TLSClientConfigure interface]({{% relref "tls-client-config-on-custom-roundtriper" %}}).
 * Adds Retry Trace ID and Attempt details to the debug log.
 * [Digest Auth]({{% relref "authentication#digest-auth" %}})
-    * Internal flow improvements and optimization.
-    * Adds `auth-int` QOP support.
-    * Adds new Hash functions `SHA-512` and `SHA-512-sess`.
-    * Updates hash functions for `SHA-512-256` and `SHA-512-256-sess`.
+  * Internal flow improvements and optimization.
+  * Adds `auth-int` QOP support.
+  * Adds new Hash functions `SHA-512` and `SHA-512-sess`.
+  * Updates hash functions for `SHA-512-256` and `SHA-512-256-sess`.
 * Adds Request level [timeout]({{% relref "timeout" %}}) support.
 * Adds the ability to determine the filename automatically from the response for [saving the response]({{% relref "save-response" %}}).
 * [Debug Log]({{% relref "debug-log" %}})
-    * Introduced Debug Log formatter, out of the box human-readable and JSON formatter added.
-
+  * Introduced Debug Log formatter, out of the box human-readable and JSON formatter added.
 
 ## New ways to create Client
 

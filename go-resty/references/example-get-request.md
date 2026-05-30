@@ -3,11 +3,12 @@ title: GET Request
 weight: 1
 ---
 
-# GET Request
+## GET Request
 
 This page discusses simple GET requests. Users can utilize Resty features across nearly all HTTP methods.
 
 > [!NOTE]
+>
 > * Explore the documentation to fulfill all use cases.
 > * Examples use request-level methods; however, Resty also includes client-level methods to configure settings for all requests.
 

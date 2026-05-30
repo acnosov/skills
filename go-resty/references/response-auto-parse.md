@@ -83,6 +83,7 @@ To prevent automatic response parsing for the particular use case, use this sett
 
 > [!WARNING]
 > Using the do not parse option means:
+>
 > * You have taken over the control of response body parsing from Resty.
 > * Do not forget to close the response body. Otherwise, you might get into connection leaks, and connection reuse may not happen.
 

@@ -8,9 +8,10 @@ Out of the box, Resty provides two algorithms -
 * [Round-Robin (RR)]({{% godoc v3 %}}RoundRobin)
 * [Weighted Round-Robin (WRR)]({{% godoc v3 %}}WeightedRoundRobin)
 
-Also, SRV records discovery using the Weighted Round-Robin (WRR) algorithm, called []().
+Also, SRV records discovery using the Weighted Round-Robin (WRR) algorithm, called [NewSRVWeightedRoundRobin]({{% godoc v3 %}}NewSRVWeightedRoundRobin).
 
 > [!NOTE]
+>
 > * Version 2 had an SRV record lookup feature but did not utilize a record weight value. Version 3 respects the record weight value and executes the appropriate weighted round-robin.
 > * Version 3 enables Resty users to implement any custom method for determining the Base URL through the [LoadBalancer]({{% godoc v3 %}}LoadBalancer) interface.
 
@@ -174,7 +175,6 @@ defer c.Close()
 * [WeightedRoundRobin.Refresh]({{% godoc v3 %}}WeightedRoundRobin.Refresh)
 * [WeightedRoundRobin.SetOnStateChange]({{% godoc v3 %}}WeightedRoundRobin.SetOnStateChange)
 * [WeightedRoundRobin.SetRecoveryDuration]({{% godoc v3 %}}WeightedRoundRobin.SetRecoveryDuration)
-
 
 ### SRVWeightedRoundRobin
 

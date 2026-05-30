@@ -12,6 +12,7 @@ Out of the box, it has -
 * [SaveToFileResponseMiddleware]({{% godoc v3 %}}SaveToFileResponseMiddleware)
 
 > [!NOTE]
+>
 > * v3 introduces a fully composable middleware feature that allows the registration of response middleware in any order to accommodate practical use cases.
 > * v3 introduces the capability to cascade an error within the response middleware execution chain.
 

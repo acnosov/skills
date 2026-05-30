@@ -3,11 +3,12 @@ title: DELETE Request
 weight: 2
 ---
 
-# DELETE Request
+## DELETE Request
 
 This page discusses simple DELETE requests. Users can utilize Resty features across nearly all HTTP methods.
 
 > [!NOTE]
+>
 > * Explore the documentation to fulfill all use cases.
 > * Examples use request-level methods; however, Resty also includes client-level methods to configure settings for all requests.
 

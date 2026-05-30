@@ -8,12 +8,13 @@ Resty provides a simple method for saving/downloading HTTP responses to the file
 
 > [!NOTE]
 > Resty v3 adds -
+>
 > * Ability to determine the filename automatically from the response in the following order -
->     * [Request.SetOutputFileName]({{% godoc v3 %}}Request.SetOutputFileName)
->     * Header `Content-Disposition`
->     * Request URL using `path.Base`
->     * Request URL hostname if path is empty or "/"
-> * Ability to use [Request.SetResult]({{% godoc v3 %}}Request.SetResult) and [Request.SetError]({{% godoc v3 %}}Request.SetError) together with save response by enabling [Request.SetResponseBodyUnlimitedReads]({{% godoc v3 %}}Request.SetResponseBodyUnlimitedReads), refer to [unlimited response reads]().
+>   * [Request.SetOutputFileName]({{% godoc v3 %}}Request.SetOutputFileName)
+>   * Header `Content-Disposition`
+>   * Request URL using `path.Base`
+>   * Request URL hostname if path is empty or "/"
+> * Ability to use [Request.SetResult]({{% godoc v3 %}}Request.SetResult) and [Request.SetError]({{% godoc v3 %}}Request.SetError) together with save response by enabling [Request.SetResponseBodyUnlimitedReads]({{% godoc v3 %}}Request.SetResponseBodyUnlimitedReads), refer to [unlimited response reads]({{% relref "unlimited-response-body-reads" %}}).
 
 {{% hintreqoverride %}}
 

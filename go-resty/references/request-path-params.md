@@ -55,8 +55,7 @@ c.R().
 * [Request.SetPathParam]({{% godoc v3 %}}Request.SetPathParam)
 * [Request.SetPathParams]({{% godoc v3 %}}Request.SetPathParams)
 
-
-# Request Raw Path Params
+## Request Raw Path Params
 
 Resty provides easy-to-use dynamic request URL **raw** path params. It replaces the value of the key while composing the request URL. The value used **as-is**, no escapes applied.
 

@@ -61,7 +61,6 @@ fmt.Println(err)
 //     ...
 ```
 
-
 ### Multiple Event Types
 
 ```go
@@ -114,7 +113,6 @@ es.SetTLSClientConfig(&tls.Config{
 })
 ```
 
-
 ### OnOpen, OnError Events
 
 ```go
@@ -154,6 +152,7 @@ The OnRequestFailure callback gets triggered when the HTTP request fails while e
 
 > [!NOTE]
 > **NOTE:**
+>
 > * Do not forget to close the HTTP response body.
 > * HTTP response may be nil.
 
@@ -172,7 +171,6 @@ es := resty.NewEventSource().
 err := es.Get()
 fmt.Println(err)
 ```
-
 
 ## Methods
 

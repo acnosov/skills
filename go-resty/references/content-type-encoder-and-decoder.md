@@ -3,7 +3,7 @@ title: Content-Type {Encoder, Decoder}
 weight: 7
 ---
 
-# Content-Type {Encoder, Decoder}
+## Content-Type {Encoder, Decoder}
 
  Resty v3 provides an extensible way to handle Request and Response content types. Out-of-the-box, it handles using Go built-in package -
 
@@ -12,6 +12,7 @@ weight: 7
 
 > [!NOTE]
 > **NOTE:**
+>
 > * User-defined encoder/decoder takes priority over default ones.
 > * Add method overwrites encoder/decoder if `Content-Type` key already exists.
 > * Resty v3 uses a streaming approach by default to handle JSON and XML content types, improving memory efficiency. Resty also provides the [In-Memory Marshal and Unmarshal]({{% relref "#in-memory-marshal-and-unmarshal" %}}) section.
@@ -51,7 +52,6 @@ c.AddContentTypeDecoder("application/json", resty.InMemoryJSONUnmarshal)
 c.AddContentTypeEncoder("application/xml", resty.InMemoryXMLMarshal)
 c.AddContentTypeDecoder("application/xml", resty.InMemoryXMLUnmarshal)
 ```
-
 
 ## Methods
 

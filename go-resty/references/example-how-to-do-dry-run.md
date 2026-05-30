@@ -2,7 +2,7 @@
 title: How to do Dry-Run?
 ---
 
-# How to do Dry-Run?
+## How to do Dry-Run?
 
 The appropriate way to do Dry-Run implementation with Resty is to implement custom transport using the `http.RoundTripper` interface.
 

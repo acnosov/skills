@@ -8,6 +8,7 @@ Resty v3 provides an extensible way to handle Response content decompression. Ou
 
 > [!NOTE]
 > **NOTE:**
+>
 > * User-defined decompressor takes priority over default ones.
 > * Add method overwrites decompressor if `decompress` directive/key already exists.
 > * [Content-Encoding directive/key](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding) is important while adding decompressor.

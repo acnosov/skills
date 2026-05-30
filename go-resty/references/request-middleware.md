@@ -11,6 +11,7 @@ Out of the box, it has -
 * [PrepareRequestMiddleware]({{% godoc v3 %}}PrepareRequestMiddleware)
 
 > [!NOTE]
+>
 > * v3 introduces a fully composable middleware feature that allows the registration of request middleware in any order to accommodate practical use cases.
 > * v3 introduces [Request.Funcs]({{% godoc v3 %}}Request.Funcs) feature that could help to perform Request instance manipulation.
 > * `Request.RawRequest` instance available after `PrepareRequestMiddleware` middleware execution.
@@ -47,7 +48,6 @@ c.SetRequestMiddlewares(
     Custom4RequestMiddleware,
 )
 ```
-
 
 ## Methods
 
